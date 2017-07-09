@@ -63,11 +63,16 @@ body {
 }
 
 .heroimage {
-  display: flex;
-  width: 60%;
+  display: block;
+  width: 100%;
   height: auto;
   margin: 32px 40px 32px 24px;
 
+}
+
+.heroimage img {
+  width: 60%;
+  height: auto;
 }
 
 .herocopybutton {
