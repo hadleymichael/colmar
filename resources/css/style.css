@@ -11,7 +11,7 @@ body {
 /*Nav and Header*/
 .header {
   display: flex;
-  height: 64px;
+  height: 4rem;
   width: 100%;
   position: fixed;
   align-items: center;
@@ -22,31 +22,39 @@ body {
 
 .header #colmar {
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .header #academy {
   color: #66ccff;
   font-weight: 100;
+  font-size: 1.5rem;
 }
 
 .header img {
   display: flex;
-  height: 50px;
-  padding-left: 24px;
+  height: 100%;
+  padding-left: 1.5rem;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  padding-right: 16px;
+  padding-right: 1rem;
 }
 
 
-.nav span {
+.nav a {
   display: inline-block;
-  padding-right: 20px;
+  padding-right: 1.25rem;
 
+
+}
+
+.nav a:hover {
+  color: #66ccff;
+  text-decoration: underline;
 }
 
 /*Hero Section*/
@@ -57,33 +65,33 @@ body {
   width: 100%;
   height: auto;
   z-index: 20;
-  padding-top: 64px;
+  padding-top: 4rem;
   background-color: #e6e6e6;
 
 }
 
-.heroimage {
+.leftcolumn {
   display: block;
   width: 60%;
   height: auto;
-  margin: 32px 40px 32px 24px;
+  margin: 2rem 2.5rem 2rem 1.5rem;
 
 }
 
-.heroimage img {
+.leftcolumn img {
   width: 100%;
   height: auto;
 }
 
-.herocopybutton {
+.rightcolumn {
   display: flex;
-  width: auto;
+  width: 26.423rem;
   flex-direction: column;
   justify-content: space-around;
   align-items:flex-start;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .headline {
@@ -104,9 +112,9 @@ body {
   width: 70%;
   text-align: center;
   background-color: #000000;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 7px 30px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem 2rem;
 
 }
 
@@ -114,6 +122,7 @@ body {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 600;
+  display: block;
 
 }
 
@@ -130,92 +139,77 @@ body {
   width: 100%;
   height: auto;
   z-index: 20;
-
 }
 
-.overview {
-  display: block;
-  width: auto;
-  height: auto;
-  margin: 32px 40px 32px 24px;
-
-}
-
-.overview img {
-  width: 100%;
-  height: auto;
-}
-
-.announcements {
+.information .rightcolumn{
   display: flex;
-  width: 423px;
+  width: 26.423rem;
   flex-direction: column;
-  justify-content: space-around;
-  align-items:flex-start;
+  justify-content: flex-start;
   height: auto;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.event {
+.information h1{
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.information p {
+  color: #cccccc;
+  font-weight: 200;
+}
+
+.information h3 {
+  padding-top: 2rem;
+  color: #cccccc;
+}
+
+.information a {
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+.information a:hover {
+  color: #66ccff;
+  text-decoration: underline;
+  }
+
+
+
+
+.featurebox {
   display: flex;
-  flex-direction: row;
-}
-
-.eventimage {
-  width: 35%;
-  height: auto;
-}
-
-.eventimage img {
   width: 100%;
-}
-.event .description {
-  display: flex;
-  flex-direction: column;
-}
-
-.locations {
-  display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
-.locations .description {
-  display: flex;
-  flex-direction: column;
-}
-
-.locimage {
+.featureimage {
   width: 35%;
   height: auto;
+  padding: 1rem;
 }
 
-.locimage img {
+.featureimage img {
   width: 100%;
   height: auto;
 }
 
-.special {
+.featuredescription {
   display: flex;
-  flex-direction: row;
-
-}
-
-.special .description {
-  display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
-.specimage {
-  width: 35%;
-  height: auto;
+.featuredescription h1 {
+  font-size: 1.5rem;
 
 }
 
-.specimage img {
-  width: inherit;
-  height: auto;
-}
+
 
 /*Courses Section*/
 
