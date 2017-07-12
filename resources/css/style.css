@@ -17,6 +17,7 @@ body {
   align-items: center;
   z-index: 10;
   background-color: #ffffff;
+  border-bottom: 2px solid #cccccc;
 
 }
 
@@ -68,7 +69,7 @@ body {
   height: auto;
   z-index: 20;
   padding-top: 4rem;
-  background-color: #e6e6e6;
+  background-color: #cccccc;
 
 }
 
@@ -152,28 +153,28 @@ body {
   padding-top: 1rem;
 }
 
-.information h1{
+.infodetails h1{
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   font-size: 2rem;
 }
 
-.information p {
+.infodetails p {
   color: #cccccc;
   font-weight: 200;
 }
 
-.information h3 {
+.infodetails h3 {
   padding-top: 2rem;
   color: #cccccc;
 }
 
-.information a {
+.featuredescription a {
   display: inline-block;
   padding-top: 1rem;
 }
 
-.information a:hover {
+.featuredescription a:hover {
   color: #66ccff;
   text-decoration: underline;
   }
@@ -211,6 +212,7 @@ body {
 .featuredescription h1 {
   font-size: 1.5rem;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 
 }
 
@@ -344,6 +346,8 @@ body {
   width: auto;
   z-index: 10;
   background-color: #ffffff;
+  white-space: nowrap;
+  padding: 1rem;
 }
 
 
@@ -353,8 +357,12 @@ body {
   width: 100%;
 }
 
-.footernav span {
-  text-decoration: underline;
+.footernav a {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.footernav a:hover {
+  color: #66ccff;
+  text-decoration: underline;
 }
