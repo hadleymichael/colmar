@@ -58,6 +58,8 @@ body {
 }
 
 /*Hero Section*/
+
+
 .herobanner {
   display: flex;
   flex-direction: row;
@@ -190,7 +192,9 @@ body {
 .featureimage {
   width: 35%;
   height: auto;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .featureimage img {
@@ -239,24 +243,28 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  padding-bottom: 2rem;
 
 }
 
+
 .coursebox {
   display: flex;
+  flex-basis: 30%;
   flex-direction:column;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
   color:
 
 }
 
 .coursebox img {
+  display: block;
   padding-bottom: 1rem;
-  height: 9rem;
-  width: auto;
+  overflow: hidden;
+  width: 100%;
 }
 
 .coursebox h3 {
@@ -275,11 +283,13 @@ body {
   font-size: 1rem;
   font-weight: lighter;
   flex-wrap: wrap;
+  vertical-align: b;
 }
 
 .coursebox:hover {
   background-color: #66ccff;
   color: #FFFFFF;
+  transition: background-color 1s linear 250ms;
 }
 
 .coursebox span:hover {
