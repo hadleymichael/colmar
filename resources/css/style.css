@@ -454,6 +454,7 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     z-index: 20;
     padding-top: 4rem;
     background-color: #cccccc;
@@ -476,14 +477,15 @@ align-items: center;
   .rightcolumn {
     display: flex;
     width: 100%;
+    height: 100%;
     align-items: center;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
   }
 
-  .rightcolumn a {
-    text-decoration: none;
+  .rightcolumn .headline {
+    font-size: 3rem;
   }
 
   .information .leftcolumn {
@@ -512,7 +514,7 @@ align-items: center;
   }
 
   .coursebox h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
   }
 
@@ -522,7 +524,7 @@ align-items: center;
 
 
   .thesis .rightcolumn {
-    display: none;
+    display:;
   }
 .infodetails {
     display: none;
