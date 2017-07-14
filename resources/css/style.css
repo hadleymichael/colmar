@@ -78,6 +78,7 @@ body {
   width: 60%;
   height: auto;
   margin: 2rem 2.5rem 2rem 1.5rem;
+  flex-shrink: 1;
 
 }
 
@@ -95,6 +96,7 @@ body {
   height: auto;
   padding-top: 6rem;
   padding-bottom: 6rem;
+  flex-shrink: 3;
 }
 
 .headline {
@@ -102,6 +104,7 @@ body {
   text-align: left;
   font-weight:900;
   font-size: 3rem;
+  flex-shrink: 3;
 }
 
 .subhead {
@@ -109,6 +112,9 @@ body {
   text-align: left;
   font-weight: 200;
   font-size: 1.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-shrink: 3;
 }
 
 .button {
@@ -118,6 +124,7 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.5rem 2rem;
+  flex-shrink: 3;
 
 }
 
@@ -126,11 +133,13 @@ body {
   font-size: 2rem;
   font-weight: 600;
   display: block;
+  padding: .5rem;
 
 }
 
 .button:hover {
   background-color: #66ccff;
+   box-shadow: 10px 10px 5px grey;
 }
 
 /*Information Overview Section*/
@@ -151,6 +160,7 @@ body {
   justify-content: flex-start;
   height: auto;
   padding-top: 1rem;
+  flex-shrink: 3;
 }
 
 .infodetails h1{
@@ -160,26 +170,20 @@ body {
 }
 
 .infodetails p {
-  color: #cccccc;
-  font-weight: 200;
+  color: #999999;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .infodetails h3 {
   padding-top: 2rem;
-  color: #cccccc;
+  color: #999999;
 }
 
-.featuredescription a {
+.featuredescription span {
   display: inline-block;
   padding-top: 1rem;
 }
-
-.featuredescription a:hover {
-  color: #66ccff;
-  text-decoration: underline;
-  }
-
-
 
 
 .featurebox {
@@ -188,6 +192,21 @@ body {
   flex-direction: row;
   align-items: flex-start;
 
+}
+
+.featurebox span {
+  padding-bottom: .5rem;
+}
+
+.featurebox:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px grey;
+
+}
+
+.featurebox:hover span {
+  color: #66ccff;
+  text-decoration: underline;
 }
 
 .featureimage {
@@ -291,7 +310,7 @@ body {
 .coursebox:hover {
   background-color: #66ccff;
   color: #FFFFFF;
-  transition: background-color 1s linear 250ms;
+  box-shadow: 10px 10px 5px grey;
 }
 
 .coursebox span:hover {
@@ -303,11 +322,27 @@ body {
 
 .thesis {
   display: flex;
+  flex-direction: column;
+align-items: center;
+ width: 100%;
+  height: auto;
+  z-index: 20;
+
+}
+
+.thesis h4 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+
+.content {
+  display: flex;
   flex-direction: row;
   align-content: center;
   width: 100%;
   height: auto;
-  z-index: 20;
 
 }
 
