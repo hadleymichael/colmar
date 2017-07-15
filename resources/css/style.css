@@ -570,7 +570,7 @@ body {
 
 /*--------------RESPONSIVE ELEMENTS-----------*/
 
-@media only screen and (max-width: 535px) {
+@media only screen and (max-width: 535px) and (orientation : portrait) {
 
   html {
    max-width: 535px;
