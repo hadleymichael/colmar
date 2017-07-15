@@ -279,7 +279,6 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 1rem;
-  color:
 
 }
 
@@ -306,7 +305,7 @@ body {
   font-size: 1rem;
   font-weight: lighter;
   flex-wrap: wrap;
-  vertical-align: b;
+  vertical-align: bottom;
 }
 
 .coursebox:hover {
