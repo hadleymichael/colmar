@@ -10,11 +10,16 @@ body {
 
 /*Nav and Header*/
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  height: 64px;
   height: 4rem;
   width: 100%;
   position: fixed;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
   background-color: #ffffff;
   border-bottom: 2px solid #cccccc;
@@ -23,32 +28,44 @@ body {
 
 .header #colmar {
   font-weight: bold;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 .header #academy {
   color: #66ccff;
   font-weight: 100;
+  font-size: 24px;
   font-size: 1.5rem;
 }
 
 .header img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
+  padding-left: 24px;
   padding-left: 1.5rem;
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
+  padding-right: 16px;
   padding-right: 1rem;
+  padding-left: 16px;
   padding-left: 1rem;
 }
 
 
 .nav a {
   display: inline-block;
+  padding-right: 20px;
   padding-right: 1.25rem;
 
 
@@ -63,12 +80,19 @@ body {
 
 
 .herobanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   height: auto;
   z-index: 20;
+  padding-top: 64px;
   padding-top: 4rem;
   background-color: #cccccc;
 
@@ -79,8 +103,10 @@ body {
   display: block;
   width: 60%;
   height: auto;
+  margin: 32px 40px 32px 24px;
   margin: 2rem 2.5rem 2rem 1.5rem;
-  flex-shrink: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
 
 }
 
@@ -90,51 +116,74 @@ body {
 }
 
 .rightcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: 422.768px;
   width: 26.423rem;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items:flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align:start;
+      -ms-flex-align:start;
+          align-items:flex-start;
   height: auto;
+  padding-top: 96px;
   padding-top: 6rem;
+  padding-bottom: 96px;
   padding-bottom: 6rem;
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .headline {
   width: 70%;
   text-align: left;
   font-weight:900;
+  font-size: 48px;
   font-size: 3rem;
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .subhead {
   width: 70%;
   text-align: left;
   font-weight: 200;
+  font-size: 20px;
   font-size: 1.25rem;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .button {
   width: 70%;
   text-align: center;
   background-color: #000000;
+  padding-top: 8px;
   padding-top: 0.5rem;
+  padding-bottom: 8px;
   padding-bottom: 0.5rem;
   border-radius: 0.5rem 2rem;
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 
 }
 
 .button a {
   color: #ffffff;
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 600;
   display: block;
+  padding: 8px;
   padding: .5rem;
 
 }
@@ -147,61 +196,92 @@ body {
 /*Information Overview Section*/
 
 .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   height: auto;
   z-index: 20;
 }
 
 .information .rightcolumn{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: 422.768px;
   width: 26.423rem;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: auto;
+  padding-top: 16px;
   padding-top: 1rem;
-  flex-shrink: 3;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
 }
 
 .infodetails h1{
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 24px;
   padding-bottom: 1.5rem;
+  font-size: 32px;
   font-size: 2rem;
 }
 
 .infodetails p {
   color: #999999;
+  font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
 }
 
 .infodetails h3 {
+  padding-top: 32px;
   padding-top: 2rem;
   color: #999999;
 }
 
 .featuredescription span {
   display: inline-block;
+  padding-top: 16px;
   padding-top: 1rem;
 }
 
 
 .featurebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 
 }
 
 .featurebox span {
+  padding-bottom: 8px;
   padding-bottom: .5rem;
 }
 
 .featurebox:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   box-shadow: 10px 10px 5px grey;
 
 }
@@ -214,8 +294,11 @@ body {
 .featureimage {
   width: 35%;
   height: auto;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
+  padding-right: 16px;
   padding-right: 1rem;
 }
 
@@ -225,14 +308,22 @@ body {
 }
 
 .featuredescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .featuredescription h1 {
+  font-size: 24px;
   font-size: 1.5rem;
+  padding-top: 16px;
   padding-top: 1rem;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
 
 }
@@ -244,10 +335,19 @@ body {
 
 
 .courseoverview {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: #cccccc;
 
@@ -255,29 +355,50 @@ body {
 }
 
 .courseoverview h1 {
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
+  font-size: 56px;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
 .courses {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
 
 }
 
 
 .coursebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-basis: 30%;
-  flex-direction:column;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+          flex-direction:column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 16px;
   padding: 1rem;
   color:
 
@@ -285,27 +406,34 @@ body {
 
 .coursebox img {
   display: block;
+  padding-bottom: 16px;
   padding-bottom: 1rem;
   overflow: hidden;
   width: 100%;
 }
 
 .coursebox h3 {
+  font-size: 32px;
   font-size: 2rem;
   font-weight: 600;
 }
 
 .coursebox h4 {
+  font-size: 16px;
   font-size: 1rem;
   font-weight: normal;
+  padding-top: 8px;
   padding-top: 0.5rem;
+  padding-bottom: 8px;
   padding-bottom: 0.5rem;
 }
 
 .coursebox span {
+  font-size: 16px;
   font-size: 1rem;
   font-weight: lighter;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   vertical-align: b;
 }
 
@@ -323,9 +451,16 @@ body {
 /*Thesis Section*/
 
 .thesis {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
  width: 100%;
   height: auto;
   z-index: 20;
@@ -333,16 +468,25 @@ align-items: center;
 }
 
 .thesis h4 {
+  padding-top: 32px;
   padding-top: 2rem;
+  padding-bottom: 32px;
   padding-bottom: 2rem;
+  font-size: 56px;
   font-size: 3.5rem;
   font-weight: 900;
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
   width: 100%;
   height: auto;
 
@@ -364,11 +508,20 @@ align-items: center;
 /*THESISSECTION important note - thesis boxes are .featureboxes, just like info section*/
 
 .thesis .rightcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  width: 422.768px;
   width: 26.423rem;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: auto;
+  padding-top: 16px;
   padding-top: 1rem;
 }
 
@@ -378,24 +531,34 @@ align-items: center;
 
 .footer {
   border-top: 1px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: auto;
   z-index: 10;
   background-color: #ffffff;
   white-space: nowrap;
+  padding: 16px;
   padding: 1rem;
 }
 
 
 .footernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
 }
 
 .footernav a {
+  padding-left: 16px;
   padding-left: 1rem;
+  padding-right: 16px;
   padding-right: 1rem;
 }
 
@@ -425,12 +588,16 @@ align-items: center;
 
 .header {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .nav {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 
   .header span {
@@ -451,9 +618,16 @@ align-items: center;
   /*hero section responsive elements*/
 
   .herobanner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
     z-index: 20;
     padding-top: 4rem;
@@ -462,25 +636,34 @@ align-items: center;
   }
 
   .leftcolumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: auto;
     margin: 0;
-    flex-shrink: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
   }
 
   .leftcolumn img {
     width: 100%;
     max-height: 12rem;
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
   }
 
   .rightcolumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 2rem;
     padding-left: 1rem;
     padding-bottom: 2rem;
@@ -499,8 +682,13 @@ align-items: center;
     }
 
 .courses {
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .courses img {
