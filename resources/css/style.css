@@ -9,7 +9,7 @@ body {
 
 
 /*Nav and Header*/
-.header {
+header {
   display: flex;
   height: 4rem;
   width: 100%;
@@ -21,24 +21,24 @@ body {
 
 }
 
-.header #colmar {
+header #colmar {
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.header #academy {
+header #academy {
   color: #66ccff;
   font-weight: 100;
   font-size: 1.5rem;
 }
 
-.header img {
+header img {
   display: flex;
   height: 100%;
   padding-left: 1.5rem;
 }
 
-.nav {
+nav {
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -47,14 +47,14 @@ body {
 }
 
 
-.nav a {
+nav a {
   display: inline-block;
   padding-right: 1.25rem;
 
 
 }
 
-.nav a:hover {
+nav a:hover {
   color: #66ccff;
   text-decoration: underline;
 }
@@ -62,7 +62,7 @@ body {
 /*Hero Section*/
 
 
-.herobanner {
+main {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -146,7 +146,7 @@ body {
 
 /*Information Overview Section*/
 
-.information {
+article {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -155,7 +155,7 @@ body {
   z-index: 20;
 }
 
-.information .rightcolumn{
+article .rightcolumn{
   display: flex;
   width: 26.423rem;
   flex-direction: column;
@@ -375,7 +375,7 @@ align-items: center;
 
 
 
-.footer {
+footer {
   border-top: 1px solid #000000;
   display: flex;
   flex-wrap: nowrap;
@@ -422,34 +422,34 @@ align-items: center;
 
 /*Responsive Header Elements*/
 
-.header {
+header {
     width: 100%;
     display: flex;
     justify-content: space-around;
   }
 
-  .nav {
+  nav {
     justify-content: space-around;
   }
 
-  .header span {
+  header span {
     display: none;
   }
 
-  .header .logo {
+  header .logo {
     display: none;
     height: 100%;
     padding: 0;
   }
 
 
-.nav .text {
+nav .text {
     display: none;
   }
 
   /*hero section responsive elements*/
 
-  .herobanner {
+  main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,9 +489,13 @@ align-items: center;
     font-size: 3rem;
   }
 
-  .information .leftcolumn {
+/*Information Section*/
+
+  article .leftcolumn {
     display: none;
   }
+
+/*Courses Section*/
 
   .courseoverview {
     background-color: #ffffff;
@@ -527,6 +531,7 @@ align-items: center;
     display: none;
   }
 
+/*Thesis Section*/
 
   .thesis .rightcolumn {
     display:none;
@@ -535,13 +540,18 @@ align-items: center;
     display: none;
   }
 
-.footer {
+  /*Footer Section*/
+
+footer {
   white-space: normal;
 }
 
 }
+
+/*Don't display icons on desktop*/
+
 @media only screen and (min-width: 536px) {
-  .nav .icon {
+  nav .icon {
     display: none;
     padding-right: 1.25rem;
   }
