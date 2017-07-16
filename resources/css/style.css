@@ -529,9 +529,6 @@ footer {
    max-width: 535px;
  }
 
- a {
-   text-decoration: underline;
- }
 
 /*Responsive Header Elements*/
 
@@ -628,6 +625,10 @@ nav .text {
     display: none;
   }
 
+article p {
+    text-decoration: none;
+  }
+
 /*Courses Section*/
 
   .courseoverview {
@@ -682,6 +683,10 @@ nav .text {
 
 footer {
   white-space: normal;
+}
+
+footer a {
+  text-decoration: underline;
 }
 
 }
